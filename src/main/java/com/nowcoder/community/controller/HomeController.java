@@ -35,13 +35,13 @@ public class HomeController {
         if (!CollectionUtils.isEmpty(list)) {
             for (DiscussPost post : list) {
                 Map<String, Object> map = new HashMap<>();
-                map.put("post",post);
+                map.put("post", post);
                 User user = userService.findUserById(post.getUserId());
-                map.put("user",user);
+                map.put("user", user);
                 discussPosts.add(map);
             }
         }
-        model.addAttribute("discussPosts",discussPosts);
+        model.addAttribute("discussPosts", discussPosts);
         return "/index";
     }
 }

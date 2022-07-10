@@ -15,10 +15,11 @@ class CommunityApplicationTests implements ApplicationContextAware {
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        this.applicationContext=applicationContext;
+        this.applicationContext = applicationContext;
     }
+
     @Test
-    public void testApplicationContext(){
+    public void testApplicationContext() {
         System.out.println(applicationContext);
     }
 }

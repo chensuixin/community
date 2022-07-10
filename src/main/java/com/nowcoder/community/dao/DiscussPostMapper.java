@@ -9,7 +9,7 @@ import java.util.List;
 @Mapper
 public interface DiscussPostMapper {
 
-    List<DiscussPost> selectDiscussPosts(int userId,int offset,int limit);
+    List<DiscussPost> selectDiscussPosts(int userId, int offset, int limit);
 
     //动态参数有且只有一个的时候  强制使用@Param
     int selectDiscussPostRows(@Param("userId") int userId);
